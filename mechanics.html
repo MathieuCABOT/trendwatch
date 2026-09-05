@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
+<title>Trendwatch</title>
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0d0d0d;color:#fff;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.lock{background:#1a1a19;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:28px 30px;width:min(420px,92vw);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.lock h1{font-size:20px;margin:0 0 4px;letter-spacing:-.01em}.lock p{margin:4px 0 16px;color:#898781;font-size:13px}
+.lock input[type=password]{width:100%;box-sizing:border-box;padding:11px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:#0d0d0d;color:#fff;font:inherit}
+.lock button{margin-top:12px;width:100%;padding:11px;border:0;border-radius:10px;background:#3987e5;color:#fff;font:inherit;font-weight:600;cursor:pointer}
+.lock label{display:flex;gap:8px;align-items:center;margin-top:12px;font-size:13px;color:#c3c2b7}
+.lock .err{color:#e66767;font-size:13px;min-height:18px;margin-top:8px}
+.mark{width:34px;height:34px;border-radius:9px;background:#3987e5;display:inline-grid;place-items:center;margin-bottom:12px}
+</style></head><body>
+<form class="lock" id="lock" autocomplete="off"><div class="mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+<h1>Trendwatch</h1><p>This page is encrypted. Enter the passphrase to read it on this device.</p>
+<input type="password" id="pass" placeholder="Passphrase" autofocus aria-label="Passphrase">
+<label><input type="checkbox" id="remember"> Remember on this device</label>
+<button type="submit">Unlock</button><div class="err" id="err" role="alert"></div></form>
+<script id="tw-enc" type="application/json">{"enc":"aes-256-gcm","kdf":"pbkdf2-sha256","iter":300000,"salt":"waTwEGXSHyvIAT01Js6ZY0F6PCFYIxsDp//l5jxtB7g=","iv":"ok9qRhmX1QyPIXnF","ct":"Ofim+Lx1FeqX6q2V+dG+IG6DYvur3Mgz00HzfQkuc5ATVGXDFJVuf07vpVyZF73ANok9sjRa2OF2Hgk6bkfXB+JDtOkCRdrQzcn63LAEoo2pTHqgOHn736Y3iCFl58rb8gni9o4Co/G08thl36hohdbMPJiKCcEg6fOfDb/EvKqQXl0/SkhFAQTqp7kGM5STjXJuvOAoeB3bFbEj6bC6Y/jhSifuDhdCSV+h5BUgOB6DkjQuYKJNnosK5O/cWgxeymLlqHOajQW8nVqDRfEiVmhuXdH9nVynTwp7NI4FFqfviUsceg30TWlYCxKND5SsgqvZVofT01Qk7gXCNlYUWphbrtjPyDuBdRVu3L8r8yt7i2EaT1em3pwekA8y4KatuClzqM0Q4J/HWHQy60TfIVKApLYpE+eLn2pNZyJYrrM="}</script>
+<script src="assets/unlock.js"></script>
+</body></html>
